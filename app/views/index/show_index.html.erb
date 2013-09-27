@@ -1,0 +1,13 @@
+<header>
+	<h1>Welcome to the StudentApp!</h1>
+	<p>Explore study tools like <%= link_to "Flashcards", flashcards_index_path %> reach out to the MakerSquare community, check the course schedule or head back to the LearnApp.</p> 
+	<!-- link flashcards community schedule and learnapp -->
+</header>
+
+<nav>
+	<ul>
+		<li><%= link_to "Flashcards", flashcards_index_path %></li>
+	</ul>
+</nav>
+
+<%= @params %>
