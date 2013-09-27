@@ -4,9 +4,12 @@ class PagesController < ApplicationController
   end
 
   def show
-    pages = {
+   pages = {
       "flashcards" =>
-        {name: "Flashcards - Covering All Lessons", headliner: "Have a good learning sesh!"}
+        {name: "Flashcards", headliner: "Have a good learning sesh!"}, 
+       "home" => {name: "Home", headliner: "Welcome to the StudentApp."},
+       "calendar" => {name: "Calendar", headliner: "What's the hapz?"}, 
+       "classmates" => {name: "Classmates", headliner: "Meet yo' peepz!"} 
     }
     @page = pages[params[:page_name]]
   end

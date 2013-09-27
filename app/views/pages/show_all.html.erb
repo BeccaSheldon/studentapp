@@ -1,11 +1,19 @@
 <header>
 	<h1>Welcome to the StudentApp!</h1>
-	<p>Explore study tools like flashcards, reach out to the MakerSquare community, check the course schedule or head back to the LearnApp.</p> 
-	<!-- link flashcards community schedule and learnapp -->
+	<ul>
+		<li>
+			<%= link_to "Home", "/pages" %>
+		</li>
+		<li>
+			<%= link_to "Flashcards", "pages/flashcards" %>
+		</li>
+		<li>
+			<%= link_to "Calendar", "pages/calendar" %>
+		</li>
+		<li>
+			<%= link_to "Classmates", "pages/classmates" %>
+		</li>
+	</ul>
 </header>
 
-<nav>
-	<ul>
-		<li><%= link_to "Flashcards", "pages/flashcards" %></li>
-	</ul>
-</nav>
+
