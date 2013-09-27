@@ -1,13 +1,16 @@
-<h1><%= @page.name %></h1>
-<h6><%= @page.headliner %></h6>
+<header>
+	<h1><%= @page.name %></h1>
+	<p><%= @page.headliner %></hp>
+</header>
 
-<br>
-<br>
-<br>
+<div>
+	<p>This is where the cool stuff happens! But for now at least we have buttons!</p>
+	<br>
+	<br>
+	<button><%= link_to 'Home', @page_first %></button>
+	<button><%= link_to 'Next', @page_last %></button>
+</div>
 
-<button>
-<%= link_to 'first', @page_first %>
-</button>
-<button>
-<%= link_to 'last', @page_last %>
-</button>
+<footer>
+	<p><%= @page.footer %></p>
+</footer>

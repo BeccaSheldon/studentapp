@@ -1,10 +1,19 @@
 <header>
 	<h1>Welcome to the StudentApp!</h1>
+</header>
+
+<nav>
 	<ul>
 		<% @pages.each do |page| %>
 			<li><%= link_to page.name, page_url(page.id) %></li>
-		<% end %>	
+		<% end %>		
 	</ul>
-</header>
+</nav>
 
+<div>
+	<p>This is where the cool stuff happens! But for now at least we have buttons.</p>
+</div>
 
+<footer>
+	<p><%= @page_footer %></p>
+</footer>
