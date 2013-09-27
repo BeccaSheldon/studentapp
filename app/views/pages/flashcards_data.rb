@@ -16,3 +16,9 @@ console
       :name => "Flashcards"
     }
   end
+
+
+  def show
+    index_name = params["name"]
+    index = {:Flashcards => {"name"}}
+  end
