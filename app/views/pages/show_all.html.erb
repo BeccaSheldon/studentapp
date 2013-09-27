@@ -1,18 +1,9 @@
 <header>
 	<h1>Welcome to the StudentApp!</h1>
 	<ul>
-		<li>
-			<%= link_to "Home", "/pages" %>
-		</li>
-		<li>
-			<%= link_to "Flashcards", "pages/flashcards" %>
-		</li>
-		<li>
-			<%= link_to "Calendar", "pages/calendar" %>
-		</li>
-		<li>
-			<%= link_to "Classmates", "pages/classmates" %>
-		</li>
+		<% @pages.each do |page| %>
+			<li><%= link_to page.name, page_url(page.id) %></li>
+		<% end %>	
 	</ul>
 </header>
 

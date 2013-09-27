@@ -1,5 +1,12 @@
-<h1><%= @page[:name] %></h1>
-<h6><%= @page[:headliner] %></h6>
+<h1><%= @page.name %></h1>
+<h6><%= @page.headliner %></h6>
+
 <br>
-<button><%= link_to 'back', pages_url %></button>
-<button><%= link_to 'next', page_flashcards_url %></button>
+<br>
+<br>
+
+<button>
+<% @pages.each do |page| %>
+	<%= for page.id in 0..4, if :id < 4, then link_to page_url() %>
+<% end %>
+</button>
