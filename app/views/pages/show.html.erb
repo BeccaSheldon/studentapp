@@ -6,7 +6,8 @@
 <br>
 
 <button>
-<% @pages.each do |page| %>
-	<%= for page.id in 0..4, if :id < 4, then link_to page_url() %>
-<% end %>
+<%= link_to 'first', @page_first %>
+</button>
+<button>
+<%= link_to 'last', @page_last %>
 </button>
